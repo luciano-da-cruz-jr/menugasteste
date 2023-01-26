@@ -12,7 +12,12 @@
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
     This is a placeholder for base href that will be replaced by the value of
+  
     the `--base-href` argument provided to `flutter build`.
+
+
+  <base href="/">
+  
   -->
   <base href="/">
 
@@ -34,7 +39,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2115761308';
+    var serviceWorkerVersion = '3551621151';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -54,5 +59,21 @@
       });
     });
   </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrRvBSUn1cLlou7RzzZc3wxcZPaklDi6w"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+   <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCr1EXqAwe5nAoZvKT80DPqaMBLHtJZUZU",
+        authDomain: "fbliides.firebaseapp.com",
+        databaseURL: "https://fbliides.firebaseio.com",
+        projectId: "fbliides",
+        storageBucket: "fbliides.appspot.com",
+        messagingSenderId: "698693005602",
+        appId: "1:698693005602:web:8a257efa7886612550b57b"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+   </script>
 </body>
 </html>
